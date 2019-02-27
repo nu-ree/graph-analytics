@@ -1,4 +1,4 @@
 # graph-analytics
 
 
-## 1. Python for Graph and Network Analysis
+## 1. [book] Python for Graph and Network Analysis
