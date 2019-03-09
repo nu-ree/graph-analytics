@@ -1,0 +1,66 @@
+
+### 1.2.1. Network Connection
+
+- 개념: 
+  - Network Connections 또는 Network connectivity라고 부름
+  - refers to the ability to move from one node to another in a network.
+  - = Route distance / Geodesic distance
+  - 네트워크 내부의 일부분에 대해서 or 네트워크 전체에 대해서 계산 가능
+
+- **Transitivity**
+
+  - 소셜 네트워크에서는 중요한 개념. (다른 네트워크에서는 아닐수도)
+
+  - "친구의 친구"를 말하는 것. 혹은 *as a synonym of whole-network clustering coefficient*를 뜻함
+
+  - 두 노드의 관계가 어디까지 transitive 되는지 나타내는 네트워크 특성(refers to the extent to which a relation between two nodes is transitive)
+
+  - Average tansivity = 3*#of triangles / # of connected triples 
+
+    - 3을 곱하는 것의 의미:
+    - 각각의 노드가 중심이 되는 3가지 triangle이 그래프 안에서 연결된 세 가지 triples에 각각 영향을 미침을 반영한 것
+    - 3 accounts for the fact that each triangle contributes to three different connected triples in the graph, one centered at each node.
+    - ==1 : 네트워크에 all possible edges가 들어있음을 의미
+    - 0.3 and 0.6이 transitivity index로 common한 수준임
+
+  - 한 그래프의 transitivity는 ***clustering coefficient(=a measure of how much nodes tend to form dense subgraphs)*
+
+    와 매우 깊은 연관이 있음.
+
+    - transitivity는 triangle의 상대빈도를 측정하게 해줌
+    - 네트워크 안에 얼마나 많은 triangle이 존재하는지 측정하는 가장 흔한 방법
+
+- **multiplexity**
+- **homophily**
+- **dyads**
+- **mutuality**
+- **balance**
+- **traids**
+- **trciprocity**
+
+
+
+
+
+### 1.2.2. Network Distribution: 
+
+- distance between nodes
+- degree centrality
+- closeness centrality
+- betweenness centrality
+- eigenvector centrality
+- Page Rank
+- geodesic distacne
+- shortest path
+- eccentiricity
+- density
+
+### 1.2.3. Network Segmentation
+
+- cohesive subgroups
+- cliques
+- clustering coefficient
+- k-cores
+- core/periphery
+- blockmodels
+- hierarchical clustering
