@@ -1,0 +1,26 @@
+# 1.5 Recent Developments in Network Analysis
+
+## 네트워크 분석 분야의 최신 연구 주제 
+### 1.5.1. Community Detection 
+#### 1) 기본 개념
+- graph clustering 이라고도 부릅니다. 
+- 커뮤니티란, 노드 간에 internal edges는 많고 external edges는 적은 서브셋을 의미
+- 혹은 커뮤니티 내에서는 connectivity 가 높고, 커뮤니티 밖의 네트워크와는 connectivity 가 낮은 그룹이라고 정의할 수도 있음
+- 커뮤니티를 찾아내는 것은 graph가 sparse 할 때, feasible 함 (즉 노드의 수가 엣지의 수와 거의 비슷할 때)
+- 커뮤니티 내에서는 connectivity
+
+#### 2) 활용 알고리즘 
+- divisive
+- agglomerative
+- optimization algorithms
+
+#### 3) 연관 키워드
+- graph partitioning : in which the aim is to find partitions in the graph which minimize the number of inter-partition edges
+
+
+#### 4) 향후 연구 주제 
+- 큰 데이터를 어떻게 다룰 것인가? 
+- 다이나믹 네트워크(dynamic networks)
+- 네트워크의 계산 복잡성(the computational complexity of networks)
+- 하나 이상의 커뮤니티에 속한 노드는 어떻게 다룰 것인가? (how to manage nodes that belong to more than one community)
+- 
