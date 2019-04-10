@@ -65,7 +65,7 @@
      ![1553661834783](C:\Users\nrchu\Documents\GitHub\graph-analytics\images\1553661834783.png)
 
 
-    
+​    
 
 - C_i = 1/2이면? 
 
@@ -175,16 +175,58 @@
 
 
 
-(1) Degree distribution :
+***(1) Degree distribution***:
 
 - Fact : G_np의 분포는 이항분포(binomial distribution)을 따른다
 - ***그래프 사이즈(n의 갯수)가 무한대가 되면?***
   - n이 커질수록 평균 degree 당 분산(sigma / mean k)은 0에 수렴하게 된다. 
   - 즉 평균 k값을 중심으로 분산이 점점 작아짐(분포가 뾰족해짐)
 
-(2) Clustering Coefficient: 
+***(2) Clustering Coefficient***: 
 
 - 노드 i의 친구가 서로 연결된 경우의 수( e_i)의 기대감 E[e_i] 는 
   - p x (k_i x(k_i -1))/2 .
-  -  즉, (각 페어가 서로 연결될 확률 p ) X (연결될 수 있는 페어의 총 갯수)
+  - 즉, (각 페어가 서로 연결될 확률 p ) X (연결될 수 있는 페어의 총 갯수)
+  - C = p = man(k) / n
+
+***(3) Path Length***:
+
+- 노드간 최단거리의 분포는 어떻게 생겼을까? 
+  - O(log n)의 형태를 가짐. 
+- 노드간 최단거리를 찾아내는 방법은? 
+- 1) Expansion이라는 속성을 정의해야 함
+  - 어떻게 계산할까? 
+    - 노드 중 어떤 subset을 골랐을 때, 얼마나 많은 엣지가 그 셋을 빠져나갈까? 
+    - 선택한 셋에서 빠져나가는 노드의 수(# of edges leaving S) 는 알파(=expansion) x min()
+    - for all possible subsets of nodes에 대해서 얼마나 많은 노드가 그 서브셋 밖으로 나가는지 측정
+    - 이를 set의 사이즈로 나눔. 이걸 expansion. 
+    - 왜  min(set, v\s)로 나눌까? set의 크기가 전체 그래프의 절반 이상으로 커지면, 그 셋의 크기로 나눠주지 않고 smaller half of the graph로 노멀라이즈 해줌. 이렇게 하지않으면  ???????????????????? 45분에 설명, 51분쯤에 다시 설명
+  - Expansion은 robustness를 특정하는 방법. 어떤 노드를 disconnect 하기 위해서 몇 개의 엣지를 잘라야 하는지 알려줌. 
+  - Low expansion : 하나만 끊어줘도 두 그래프다 분리됨
+  - High expansion : 어떤 서브셋을 선택하건, 끊어야 할 선이 너무 많음
+  - 소셜네트워크는 '커뮤니티'구조를 가지고 있어서, 중간정도의 expansion을 가짐. 커뮤니티 내에서는 높고, 커뮤니티 간에는 낮고
+
+- Random Graph에 Expansion 적용해보자
+  - Fact ! 랜덤 그래프는 일반적으로 큰 expansion을 가짐
   - 
+
+
+
+***(4) Connected Components***
+
+- 
+
+
+
+
+
+## 사례를 살펴보자
+
+
+
+--- 1:00:32
+
+## The small-world model
+
+> can we have high clustering while also having short paths? 
+
